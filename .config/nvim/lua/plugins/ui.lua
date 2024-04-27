@@ -14,6 +14,14 @@ return {
     end,
   },
 
+  -- Adjust notification duration to 10 sec
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      timeout = 10000,
+    },
+  },
+
   -- Displays filename in the top right
   {
     "b0o/incline.nvim",
