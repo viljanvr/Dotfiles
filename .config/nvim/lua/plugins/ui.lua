@@ -37,7 +37,7 @@ return {
             InclineNormalNC = { guifg = colors.fg, guibg = colors.bg_highlight },
           },
         },
-        window = { margin = { vertical = 0, horizontal = 1 } },
+        window = { margin = { vertical = 2, horizontal = 1 } },
         hide = {
           cursorline = true,
         },
