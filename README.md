@@ -16,7 +16,7 @@ A repository with Viljan's config files for mac.
 
 1. Download the [required prerequisites](#required-prerequisites).
 2. Clone this repository.
-3. Run the following commands: `cd .dotfiles` and `stow .`.
+3. Run the following commands: `cd dotfiles` and `sudo stow --dotfiles .`.
 
 ## Required prerequisites
 
