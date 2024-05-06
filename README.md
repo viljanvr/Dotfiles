@@ -4,13 +4,14 @@ A repository with Viljan's config files for mac.
 
 ## Content
 
-- LazyVim config: `.config/nvim/`
-- PowerLevel10k theme: `.p10k.zsh`
-- ZSH shell config: `.zshrc`
+- LazyVim config: `dot-config/nvim/`
+- Starship config: `dot-config/starship.toml`
+- ZSH shell config: `dot-zshrc`
+- Tmux config: `dot-tmux.conf`
 
 #### Miscellaneous: `misc` (Ignored by Stow)
 
-- iTerm colorschemes: `misc/tokyonight_night.itermcolors` & `misc/viljan.itermcolors`
+- iTerm colorschemes: `misc/iTerm`
 
 ## Get started
 
@@ -24,7 +25,7 @@ A repository with Viljan's config files for mac.
 - [iTerm2](https://iterm2.com/) - Custom Terminal
 - [Neovim](https://github.com/neovim/neovim/) - Vim-based text editor
 - [Oh My ZSH](https://ohmyz.sh/) - ZSH configuration tool
-- [PowerLevel10k](https://github.com/romkatv/powerlevel10k) - Terminal theme
+- [Starship](https://starship.rs/) - Terminal theme
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - Used in [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [Tmux](https://github.com/tmux/tmux/wiki) - Terminal multitaksing
 - [Tmux plugin manager](https://github.com/tmux-plugins/tpm) - Manage plugins for Tmux
