@@ -88,7 +88,7 @@ eval "$(zoxide init --cmd cd zsh)"
 # --- Bat ---
 # Theme file located in .config/bat/themes/
 # When changing theme, reload using `bat cache --build`
-export BAT_THEME="Catppuccin Mocha"
+export BAT_THEME="fly16"
 
 # --- Node Verison Manager ---
 export NVM_DIR="$HOME/.nvm"
