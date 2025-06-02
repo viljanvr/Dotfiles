@@ -7,6 +7,8 @@
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
+-- ------------------------------------------------------------------------------------
+
 -- Ensures that right working directory is set when opening a directory in NeoVim.
 -- Previous behaviour: working directory in terminal would decide the working directory in neovim
 -- New behaviour: if you give a directory as an argument to neovim, it will use that as working directory
