@@ -39,6 +39,5 @@ A repository with Viljan's config files for mac.
 - [Git delta](https://github.com/dandavison/delta) - Improved `git diff`
 - [Eza](https://github.com/eza-community/eza) - Improved `ls`
 - [The Fuck](https://github.com/nvbn/thefuck) - Corrects errors in previous console commands
-- Oh My ZSH plugins:
-  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/) - Suggests commands as you type based on history and completions
-  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Syntax highlighting for the ZSH shell
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/) - Suggests commands as you type based on history and completions
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Syntax highlighting for the ZSH shell
