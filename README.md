@@ -22,7 +22,7 @@ A repository with Viljan's config files for mac.
 ## Required prerequisites
 
 - [GNU stow](https://formulae.brew.sh/formula/stow) - Create symlinks
-- [iTerm2](https://iterm2.com/) - Custom Terminal
+- [Ghostty](https://ghostty.org/) - Custom Terminal
 - [Neovim](https://github.com/neovim/neovim/) - Vim-based text editor
 - [Oh My ZSH](https://ohmyz.sh/) - ZSH configuration tool
 - [Starship](https://starship.rs/) - Terminal theme
