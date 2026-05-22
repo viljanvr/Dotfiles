@@ -41,3 +41,4 @@ A repository with Viljan's config files for mac.
 - [The Fuck](https://github.com/nvbn/thefuck) - Corrects errors in previous console commands
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/) - Suggests commands as you type based on history and completions
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) - Syntax highlighting for the ZSH shell
+- [Aerospace](https://github.com/nikitabobko/AeroSpace) - Tiling window manager
