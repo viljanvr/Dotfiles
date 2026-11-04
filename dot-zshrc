@@ -51,16 +51,7 @@ _fzf_comprun() {
 # When changing theme, reload using `bat cache --build`
 export BAT_THEME="fly16"
 
-# --- Node Verison Manager ---
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# --- Local .zshrc ---
+# Load settings for this device, if present.
+[[ -r ~/.zshrc.local ]] && source ~/.zshrc.local
 
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-path=('/Users/viljanvanraaij/.juliaup/bin' $path)
-export PATH
-
-# <<< juliaup initialize <<<
