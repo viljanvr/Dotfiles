@@ -17,14 +17,20 @@ A repository with Viljan's config files for mac.
 
 1. Download the [required prerequisites](#required-prerequisites).
 2. Clone this repository.
-3. Run the following commands: `cd dotfiles` and `sudo stow --dotfiles .`.
+3. Run the following commands: 
+    ```zsh
+    mkdir ~/.config
+    cd Dotfiles
+    sudo stow --dotfiles --target="$HOME" .
+    ```
+    *Optionally, run 
+    `stow --dotfiles --target="$HOME" --simulate --verbose .` beforehand to verify the changes.*
 
 ## Required prerequisites
 
 - [GNU stow](https://formulae.brew.sh/formula/stow) - Create symlinks
 - [Ghostty](https://ghostty.org/) - Custom Terminal
 - [Neovim](https://github.com/neovim/neovim/) - Vim-based text editor
-- [Oh My ZSH](https://ohmyz.sh/) - ZSH configuration tool
 - [Starship](https://starship.rs/) - Terminal theme
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - Used in [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [Tmux](https://github.com/tmux/tmux/wiki) - Terminal multitaksing

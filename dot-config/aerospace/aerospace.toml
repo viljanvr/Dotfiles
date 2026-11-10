@@ -15,7 +15,7 @@ after-startup-command = [
 start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
-enable-normalization-flatten-containers = true
+enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = true
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
@@ -103,7 +103,7 @@ on-mode-changed = []
     # You can uncomment the following lines to open up terminal with alt + enter shortcut
     # (like in i3)
     # alt-a = 'exec-and-forget open -a /Applications/Arc.app'
-    # alt-t = 'exec-and-forget open -a /Applications/Ghostty.app/'
+    alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app/'
     # alt-s = 'exec-and-forget open -a /Applications/Slack.app/'
     # alt-v = 'exec-and-forget open -a "/Applications/Visual Studio Code.app/"'
     # alt-o = 'exec-and-forget open -a "/Applications/Microsoft Outlook.app/"'
@@ -112,7 +112,7 @@ on-mode-changed = []
     # Open Spotlight clipboard history with Shift+Option+C.
     alt-cmd-c = """exec-and-forget /usr/bin/osascript -l JavaScript -e 'ObjC.import("CoreGraphics");
 var source = $.CGEventSourceCreate(-1);
-function commandKey(code) {
+function commandKey(code) { 
     [true, false].forEach(function(down) {
         var event = $.CGEventCreateKeyboardEvent(source, code, down);
         $.CGEventSetFlags(event, 1048576);
@@ -123,21 +123,31 @@ commandKey(49);
 delay(0.3);
 commandKey(21);'"""
 
-    alt-ctrl-enter = 'fullscreen'
-    alt-ctrl-f = 'layout floating tiling'
-
-    # See: https://nikitabobko.github.io/AeroSpace/commands#join-with 
-    alt-a = 'join-with left'
-    alt-s = 'join-with down'
-    alt-d = 'join-with up'
-    alt-f = 'join-with right'
-
-    alt-r = 'flatten-workspace-tree' # Reset
- 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    alt-period = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
 
+    alt-f = 'fullscreen'
+    alt-space = 'layout floating tiling'
+    alt-t = [
+    'fullscreen off',
+    'layout tiling tiles horizontal vertical',
+    ]
+
+
+    # Not used, prefer split commands
+    # See: https://nikitabobko.github.io/AeroSpace/commands#join-with 
+    # alt-a = 'join-with left'
+    # alt-s = 'join-with down'
+    # alt-d = 'join-with up'
+    # alt-f = 'join-with right'
+
+    # See: https://nikitabobko.github.io/AeroSpace/commands#split
+    alt-v = 'split vertical'
+    shift-alt-v = 'split horizontal'
+
+
+    shift-alt-r = 'flatten-workspace-tree' # Reset
+    shift-alt-c = 'reload-config' 
+ 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left'
     alt-j = 'focus down'
@@ -197,19 +207,10 @@ commandKey(21);'"""
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
-    esc = ['reload-config', 'mode main']
-    r = ['flatten-workspace-tree', 'mode main'] # reset layout
-    f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
     backspace = ['close-all-windows-but-current', 'mode main']
 
     # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
     #s = ['layout sticky tiling', 'mode main']
-
-    alt-shift-h = ['join-with left', 'mode main']
-    alt-shift-j = ['join-with down', 'mode main']
-    alt-shift-k = ['join-with up', 'mode main']
-    alt-shift-l = ['join-with right', 'mode main']
-
 
 # Configure apps that float by default
 [[on-window-detected]]
