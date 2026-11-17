@@ -1,3 +1,7 @@
+# --- Local .zshrc ---
+# Load settings for this device, if present.
+[[ -r ~/.zshrc.local ]] && source ~/.zshrc.local
+
 # --- Starship ---
 eval "$(starship init zsh)"
 
@@ -51,7 +55,12 @@ _fzf_comprun() {
 # When changing theme, reload using `bat cache --build`
 export BAT_THEME="fly16"
 
-# --- Local .zshrc ---
-# Load settings for this device, if present.
-[[ -r ~/.zshrc.local ]] && source ~/.zshrc.local
+# Color -h and --help output (Escape with backslash "-\h" if h means something else)
+alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
+alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 
+# Enable prefix history when when you press ↑ or ↓ 
+bindkey '\e[A' history-beginning-search-backward
+bindkey '\e[B' history-beginning-search-forward
+bindkey '\eOA' history-beginning-search-backward
+bindkey '\eOB' history-beginning-search-forward

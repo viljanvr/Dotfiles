@@ -3,3 +3,7 @@
 # Python bytecode caches
 __pycache__/
 *.py[cod]
+
+# Fish
+fish_variables
+config.local.fish
